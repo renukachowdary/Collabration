@@ -31,9 +31,15 @@
  	<script src="controller/homeController.js"></script>
  	<script src="controller/JobController.js"></script>
     <script src="service/JobService.js"></script>
-  <script src="service/homeservice.js"></script>
+     <script src="service/homeservice.js"></script>
   	 <script src="service/friendservice.js"></script>
   	 <script src="controller/friendcontroller.js"></script>
+  	 <script  src="controller/chatcontroller.js"></script>
+     <script  src="service/chatservice.js"></script>
+  	 
+  	<script src="js/sockjs/sockjs.js"></script>
+    <script src="js/stomp/dist/stomp.js"></script>
+  	 
 </head>
 
 <body>
@@ -90,18 +96,11 @@
 						<li><a href="#/friends">Friends List</a></li></ul>
 						</span>
 						</li>
-    <li><a href="#/chat" data-ng-show="currentUser.username">chat </a></li>
+    <li><a href="#/chat" ng-show="currentUser.username">chat </a></li>
+ 
  
       
-      <script src="js/sockjs/sockjs.js"></script>
-    <script src="js/stomp/dist/stomp.js"></script>
 
-
-<script type="text/javascript" src="controller/chatcontroller.js"></script>
-<script type="text/javascript" src="service/chatservice.js"></script>
-      
-</html>
-   
        </ul>
        
   </div>

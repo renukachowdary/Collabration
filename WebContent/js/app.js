@@ -70,7 +70,7 @@
                 controller  : 'HomeController'
             })
             
-.when('/chat',{
+  .when('/chat',{
 		templateUrl:'views/chat.html',
 		controller:'ChatCtrl'
 	})

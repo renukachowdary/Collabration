@@ -1,4 +1,4 @@
-/*app.controller('ChatCtrl', ['$rootScope' ,'$scope', 'socket', function($rootScope ,$scope, socket) {
+app.controller('ChatCtrl', ['$rootScope' ,'$scope', 'socket', function($rootScope ,$scope, socket) {
     alert('entering chat controller')
     $scope.chats = [];
     $scope.stompClient = socket.stompClient;
@@ -97,4 +97,3 @@
  
  
 }]);
-*/

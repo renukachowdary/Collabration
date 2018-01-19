@@ -1,4 +1,4 @@
-/*app.filter('reverse', function() {
+app.filter('reverse', function() {
 	  return function(items) {
 	    return items.slice().reverse();
 	  };
@@ -14,7 +14,7 @@
 
 	app.factory('socket', function($rootScope) {
 	  alert('app factory')
-	    var socket = new SockJS('/project2middleware/chatmodule');
+	    var socket = new SockJS('/Backend2/chatmodule');
 	    var stompClient = Stomp.over(socket);
 	    stompClient.connect('', '', function(frame) {
 	      $rootScope.$broadcast('sockConnected', frame);
@@ -23,4 +23,4 @@
 	    return {
 	      stompClient: stompClient
 	    };
-	});*/
+	});
